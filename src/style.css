@@ -1,0 +1,10 @@
+body {
+    -webkit-user-select: all;
+    background-color: rgba(0,0,0,0);
+}
+.time{
+    font-size: 34pt;
+    text-align: center;
+    text-shadow: 2px 2px 2px #FFF;
+    -webkit-app-region: drag;
+}
