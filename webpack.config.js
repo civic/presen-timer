@@ -4,6 +4,7 @@ module.exports = {
             './src/index.js',
             './src/index.html',
             './src/style.css',
+            './src/background.js',
             './node_modules/bootstrap/dist/css/bootstrap.min.css',
             './node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2',
         ],
@@ -34,6 +35,10 @@ module.exports = {
             },
             {
                 test: /src(\/|\\)entry\.js$/,
+                loader: "file-loader?name=[path][name].[ext]&context=src"
+            },
+            {
+                test: /src(\/|\\)background\.js$/,
                 loader: "file-loader?name=[path][name].[ext]&context=src"
             },
             {
