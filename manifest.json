@@ -1,15 +1,15 @@
 {
-    "name": "Hello World!",
-    "description": "My first Chrome App.",
+    "name": "Presen Timer",
+    "description": "Study ndsmeetup8",
     "version": "0.1",
     "manifest_version": 2,
     "app": {
         "background": {
-            "scripts": ["build/background.js"]
+            "scripts": ["background.js"]
         }
     },
-    "permission": {
+    "permissions": [
         "alwaysOnTopWindows"
-    }
+    ]
 }
 
